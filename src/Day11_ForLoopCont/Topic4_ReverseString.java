@@ -24,8 +24,12 @@ public class Topic4_ReverseString {
         // Tanya Bozyel
         // 0123456789
         //
+        String name;
 
-        for (int i = input.length()-1; i >=0 ; i--) {
+
+
+
+        for ( int i = input.length()-1;i >=0; i--) { //()
             reverse = reverse+input.charAt(i); // revers = ""+l ==> l
                                                 // reverse = l+e = le
                                                 // reverse = le+y = ley
