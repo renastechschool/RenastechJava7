@@ -50,10 +50,10 @@ public class Session6_3 {
         int armstrongInput  = scanner.nextInt();
         String convertToString = String.valueOf(armstrongInput);
         int temp = 0;
-
+        //371
         for(int i =0; i< convertToString.length();i++)
         {
-            temp += Integer.parseInt(convertToString.charAt(i) +"") *Integer.parseInt(String.valueOf(convertToString.charAt(i))) *Integer.parseInt(String.valueOf(convertToString.charAt(i)));
+            temp += Math.pow(Integer.parseInt(convertToString.charAt(i) +""),convertToString.length());
 
         }
 
