@@ -25,7 +25,7 @@ public class Topic5_Example2 {
             if(word.length()<4){
                 continue;
             }
-            for (int j = 0; j < word.length()-3; j++) {
+            for (int j = 0; j < word.length()-3; j++) { // Afternoon // noon substring(0,4)
 
                 String sub = word.substring(j,j+4); // (0,4) subString(4,9)
                 String reverse="";
