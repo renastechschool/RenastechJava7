@@ -44,6 +44,8 @@ public class Week7_1 {
         System.out.println("*******************");
         System.out.println(Arrays.toString(intArray3));
 
+
+        //bubble sorting algorithm
         int[] makeAscending = {6,1,823,-12,8,12,-123,25,7,2,9};
 
         int a = 10;
