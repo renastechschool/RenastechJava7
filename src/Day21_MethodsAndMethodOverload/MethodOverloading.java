@@ -55,12 +55,12 @@ public class MethodOverloading {
 
     private static String calculateNumbers(int number1, double number2){
         double sum = number1+number2;
-        return "Total is: "+ sum;
+        return "Total is equal to "+ sum;
     }
 
     private static String calculateNumbers(double number2,int number1){
         double sum = number1+number2;
-        return "Total is: "+ sum;
+        return "Total is equal to "+ sum;
     }
 
 }
