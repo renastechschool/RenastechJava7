@@ -60,6 +60,7 @@ public class MethodOverloading {
 
     private static String calculateNumbers(double number2,int number1){
         double sum = number1+number2;
+        System.out.println(sum);
         return "Total is equal to "+ sum;
     }
 
