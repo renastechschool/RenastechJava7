@@ -1,7 +1,5 @@
 package Day13_WhileLoop;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.util.Scanner;
 
 public class Topic2_WhileCont {

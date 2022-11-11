@@ -1,6 +1,5 @@
 package Day16_Arrays;
 
-import com.sun.corba.se.impl.encoding.CDROutputObject;
 
 public class Topic2_Arrays {
 

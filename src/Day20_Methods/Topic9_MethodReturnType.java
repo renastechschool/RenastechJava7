@@ -1,7 +1,5 @@
 package Day20_Methods;
 
-import sun.print.SunMinMaxPage;
-
 public class Topic9_MethodReturnType {
 
     public static void main(String[] args) {
