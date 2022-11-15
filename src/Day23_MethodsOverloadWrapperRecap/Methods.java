@@ -38,7 +38,7 @@ public class Methods {
 
 
     }
-
+// this method created for example of adding 2 numbers
     public static int Add(int param1, int param2){
         return param1 * param2;
     }
