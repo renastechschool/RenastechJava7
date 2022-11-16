@@ -39,6 +39,12 @@ public class Topic3_ChangeElements {
         boolean DoWeHaveBulgurInArrayList = RandomWords.contains("bulgur");
         System.out.println(DoWeHaveBulgurInArrayList);
 
+        System.out.println("-------------------------");
+
+        System.out.println(RandomWords);
+        RandomWords.set(RandomWords.indexOf("elastic"), "chocolate");
+        System.out.println("Modified Array List : "+RandomWords);
+
 
 
 
