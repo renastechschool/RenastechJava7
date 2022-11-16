@@ -26,20 +26,46 @@ public class Topic5_StandardDeviation {
 
         System.out.println("Mean : " + mean);
 
-        CalculateVarianceArrayList(MyDataSet, mean);
+        ArrayList<Integer> MyCalculatedVariance = CalculateVarianceArrayList(MyDataSet, mean);
+
+        double SumOfVariance = 0;
+        for (int i = 0; i < MyCalculatedVariance.size(); i++) {
+//            SumOfVariance += MyCalculatedVariance.get(i);
+//            Below code same as above
+            SumOfVariance = SumOfVariance + MyCalculatedVariance.get(i);
+        }
+
+        System.out.println("Sum of the Variance of ArrayList : " + SumOfVariance);
+
+        double Varience = SumOfVariance / (n-1);
+
+        System.out.println("Varience : "+Varience);
+
+        double StandardDeviation = Math.sqrt(Varience);
+
+        System.out.println("Standard Deviation : "+StandardDeviation);
     }
 
     /// This method will calculate Variance of given array list
     /// @MyDataSet = this is an Arraylist that you will pass your Data Set
     /// @mean = this is an int that you will pass your calculated mean value
     public static ArrayList<Integer> CalculateVarianceArrayList (ArrayList<Integer> MyDataSet, int mean){
-        ArrayList<Integer> Variance = new ArrayList<>(MyDataSet.size());
+        ArrayList<Integer> Variance = new ArrayList<>();
 
 //        for (int i = 0; i <= param1.size()-1; i++) {
         for (int i = 0; i < MyDataSet.size(); i++) {
-            Variance.set(i, MyDataSet.get(i) - mean);
+//            Variance.set(i, MyDataSet.get(i) - mean);  This will throw an error as the size of the ArrayList = 0
+            Variance.add(MyDataSet.get(i) - mean);
         }
 
-        return  Variance;
+        for (int i = 0; i < Variance.size(); i++) {
+            int SquareOfElement = Variance.get(i)*Variance.get(i);
+//            Below code will calculate the power of given value. Same as above as we are sending 2 as parameter
+//            double SquareOfElementUsingPOW = Math.pow(Variance.get(i), 2);
+
+            Variance.set(i, SquareOfElement);
+        }
+
+        return Variance;
     }
 }
