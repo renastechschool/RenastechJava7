@@ -64,6 +64,7 @@ public class Topic5_StandardDeviation {
 //            double SquareOfElementUsingPOW = Math.pow(Variance.get(i), 2);
 
             Variance.set(i, SquareOfElement);
+
         }
 
         return Variance;
