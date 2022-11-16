@@ -23,6 +23,5 @@ public class Topic2_AccessElements {
             System.out.println(RandomWords.get(j));
             j++;
         }
-
     }
 }
