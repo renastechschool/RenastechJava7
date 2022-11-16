@@ -27,16 +27,17 @@ public class Topic5_StandardDeviation {
         System.out.println("Mean : " + mean);
 
         CalculateVarianceArrayList(MyDataSet, mean);
-
-
     }
 
-    public static ArrayList<Integer> CalculateVarianceArrayList (ArrayList<Integer> param1, int param2){
-        ArrayList<Integer> Variance = new ArrayList<>(param1.size());
+    /// This method will calculate Variance of given array list
+    /// @MyDataSet = this is an Arraylist that you will pass your Data Set
+    /// @mean = this is an int that you will pass your calculated mean value
+    public static ArrayList<Integer> CalculateVarianceArrayList (ArrayList<Integer> MyDataSet, int mean){
+        ArrayList<Integer> Variance = new ArrayList<>(MyDataSet.size());
 
 //        for (int i = 0; i <= param1.size()-1; i++) {
-        for (int i = 0; i < param1.size(); i++) {
-            Variance.set(i, param1.get(i) - param2);
+        for (int i = 0; i < MyDataSet.size(); i++) {
+            Variance.set(i, MyDataSet.get(i) - mean);
         }
 
         return  Variance;
