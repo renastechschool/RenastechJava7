@@ -23,4 +23,25 @@ public class CowClass extends OldMcDonaldAnimal{
         System.out.println(AnimalName+": You will drink a Milk");
     }
 
+    public CowClass(){
+        NumberOfLegs = 4;
+    }
+
+
+    //                     Private methods can not be @override
+    //                 Protected methods can be
+
+////				   ONLY the instance methods can be overridden
+////				   @Override annotation MUST be applicable
+    // static, final, abstract,sycn..
+    // final methods can not be override.
+    // you can not override the constructor of super(Parent) class
+////
+
+    // OverLoading vs Override  = Override is used when we want to threat the parent method to have different
+    // reaction when it is called from the child instance,
+    // Overloading : We use overloading to use the same method for different input parameters and return types
+    // it is for the same class methods.
+
+
 }

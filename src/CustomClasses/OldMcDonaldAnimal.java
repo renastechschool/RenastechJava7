@@ -12,4 +12,8 @@ public class OldMcDonaldAnimal {
     public void Eat(){
         System.out.println(AnimalName+" is eating");
     }
+
+    public final void PrintNameAndLeg(){
+        System.out.println(AnimalName+" "+NumberOfLegs);
+    }
 }
