@@ -13,6 +13,11 @@ public class OldMcDonaldAnimal {
         System.out.println(AnimalName+" is eating");
     }
 
+    //Constructor
+    public OldMcDonaldAnimal(){
+
+    }
+
     public final void PrintNameAndLeg(){
         System.out.println(AnimalName+" "+NumberOfLegs);
     }
