@@ -24,4 +24,17 @@ public class StudentClass {
         HomeworkResults.add(param1);
     }
 
+    ///GetMean : This method will calculate Mean and return
+    ///Return Type = double
+    ///No Parameter
+    // PublicOrPrivate StaticOrNot ReturnType MethodName(ParameterType, ParamaterName,...)
+    public double GetMean(){
+        int sum = 0;
+        for (int i = 0; i <HomeworkResults.size(); i++) {
+            sum = sum + HomeworkResults.get(i);
+        }
+        double Mean = sum / HomeworkResults.size();
+        return Mean;
+    }
+
 }

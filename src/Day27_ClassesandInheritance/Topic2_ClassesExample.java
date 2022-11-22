@@ -13,18 +13,36 @@ public class Topic2_ClassesExample {
         FirstStudent.Name = "Hayri";
         FirstStudent.StudentNumber = "1";
         FirstStudent.AddHomeworkResult(50);
+        FirstStudent.AddHomeworkResult(5);
+        FirstStudent.AddHomeworkResult(23);
+        FirstStudent.AddHomeworkResult(80);
 
 
         StudentClass SecondStudent = new StudentClass();
         SecondStudent.Name = "George";
         SecondStudent.StudentNumber = "2";
 
+        SecondStudent.AddHomeworkResult(90);
+        SecondStudent.AddHomeworkResult(98);
+        SecondStudent.AddHomeworkResult(87);
 
-        String Something;
-        Something = new String("test");
-        System.out.println(Something);
+        if (FirstStudent.GetMean()>=70){
+            System.out.println(FirstStudent.Name+" Passed");
+        }
+        else {
+            System.out.println(FirstStudent.Name+" Failed");
+        }
 
-        String s = "s";
+        if (SecondStudent.GetMean()>=70){
+            System.out.println(SecondStudent.Name+" Passed");
+        }
+        else {
+            System.out.println(SecondStudent.Name+" Failed");
+        }
+
+
+
+
 
 
 
