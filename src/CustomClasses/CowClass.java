@@ -45,7 +45,7 @@ public class CowClass extends OldMcDonaldAnimal{
 ////
 
     // OverLoading vs Override  =
-    // Override is used when we want to threat the parent method to have different
+    // Override is used when we want to treat the parent method to have different
     // reaction when it is called from the child instance,
     // Overloading : We use overloading to use the same method for different input parameters and return types
     // it is for the same class methods.
