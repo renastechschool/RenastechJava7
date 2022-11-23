@@ -1,7 +1,5 @@
 package Day28_InheritanceandAbstraction;
 
-import CustomClasses.AnimalClass;
-
 import java.util.ArrayList;
 
 public class Topic2_Polymorphism {
@@ -14,7 +12,30 @@ public class Topic2_Polymorphism {
         MyZoo.add(MyAnimal);
         MyZoo.add(MyDog);
         MyZoo.add(MyPig);
+
+        for (int i = 0; i < MyZoo.size(); i++) {
+            Animal AnAnimal = MyZoo.get(i);
+            AnAnimal.AnimalSound();
+
+//            Below code is same with the code above
+//            MyZoo.get(i).AnimalSound();
+        }
+
+        /*
+        Polymorphism means "many forms"
+        In Java, Polymorphism means same object performing different operations according to the requirement.
+        (in Java all classes inherit from Object.)
+        in other words Polymorphism is simply the ability of an object to specialize its behavior based on its type.
+         Polymorphism can be achieved by using two ways, those are
+
+        Method overriding
+        Method overloading
+
+         */
+
     }
+
+
 }
 
 // Class int extend Object  <--- this is not true!!
@@ -27,6 +48,9 @@ public class Topic2_Polymorphism {
 class Animal{
     public void AnimalSound(){
         System.out.println("The animal makes a sound");
+    }
+    public void AnimalSound(String param1){
+        System.out.println(param1+" makes a sound");
     }
 }
 
