@@ -2,9 +2,15 @@ package Day28_InheritanceandAbstraction;
 
 public class Topic4_AbstractClasses {
     public static void main(String[] args) {
-
+//        Bakery MyBakery = new Bakery(); // you can not create a copy of an abstract class
+//        CremeBrule MyCremeBrule = new CremeBrule(); // you can not create a copy of an interface too
+        Danish MyDanish = new Danish();
     }
 }
+
+/*
+
+ */
 
 abstract class Bakery{
     String Name;

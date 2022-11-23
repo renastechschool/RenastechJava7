@@ -47,7 +47,7 @@ class Dolphin implements AquaticAnimals{
         System.out.println("Dolphin is swimming.");
     }
 }
-// Can you implement a class from more than one interface?
+// Can you implement a class from more than one interfaces?
 class Penguin implements AquaticAnimals, TerrestrialAnimals{
     @Override
     public void Swim() {
