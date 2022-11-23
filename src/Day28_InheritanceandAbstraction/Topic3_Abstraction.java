@@ -47,3 +47,24 @@ class Dolphin implements AquaticAnimals{
         System.out.println("Dolphin is swimming.");
     }
 }
+// Can you implement a class from more than one interface?
+class Penguin implements AquaticAnimals, TerrestrialAnimals{
+    @Override
+    public void Swim() {
+        System.out.println("Penguin is swimming!");
+    }
+
+    @Override
+    public void Walk() {
+        System.out.println("Penguin is walking!");
+    }
+}
+
+
+// Can you extend a class from more than one class?
+//NO, Class cannot extend multiple classes
+/* I cannot write below code
+class Tiger extends Cat,Lion{
+
+}
+ */
