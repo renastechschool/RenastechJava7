@@ -33,6 +33,8 @@ Abstract method: can only be used in an abstract class, and it does not have a b
 
 abstract class Bakery{
     String Name;
+    protected String Something;
+    private String AprivateField;
     public Bakery(){
         //this is your constructor
     }
