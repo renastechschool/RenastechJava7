@@ -14,6 +14,10 @@ public class Q2 {
 
     // question, is there only one space, limitation,
 
+    public static void main(String[] args) {
+        System.out.println(mostPoeticalWord("and the garden diminishes: grape leaves rumpled and rusty, zucchini felled by borers, tomatoes sparse on the vines"));
+    }
+
     public static String mostPoeticalWord(String poem){
 
         String[] words = poem.split(" "); // ['and','the','garden',.....]
@@ -23,22 +27,26 @@ public class Q2 {
         for (int i = 0; i < words.length; i++){
 
             String word = words[i]; // and
+            System.out.println(word);
 
             int count = 0;
 
-            char[] letters = word.toCharArray(); // ['a','n','d']
+            char[] letters = word.toCharArray(); // ['a','n','d'] // ['g','a','r','d','e','n']  // ['f','e','l','l','e','d']
             for(int j=0; j< letters.length; j++){
+                System.out.println(letters[j]);
                 if(letters[j] == 'a' || letters[j] == 'b' || letters[j] == 'c' || letters[j] == 'd' || letters[j] == 'e'|| letters[j] == 'f' ){
                     count=count+1;
-                }else if(letters[j] == 'k'){
+                }if(letters[j] == 'k'){
                     count=count-1;
-                }else if(letters[j] == 'x'){
+                }if(letters[j] == 'x'){
                     count=count-2;
                 }
-            }
-            if(count>count2){
-                count2 = count;
-                wordResult = words[i];
+            } // 3 > 1
+              // 4>3
+            System.out.println(count);
+            if(count>count2){ // count2 = 0, count = 1
+                count2 = count; // count2 = 4
+                wordResult = words[i]; //wordResult = felled
             }
         }
         return wordResult;
