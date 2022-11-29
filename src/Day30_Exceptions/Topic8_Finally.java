@@ -15,10 +15,15 @@ public class Topic8_Finally {
         }
 
         try{
-
+            System.out.println("Open a File");
+            /*
+            do something about file
+             */
         }finally {
-
+            System.out.println("Close the file!");
         }
+
+
 
         /*
         try{
@@ -44,6 +49,8 @@ public class Topic8_Finally {
         finally{
         }
 
+        //Below combinations are wrong
+
         catch(){
         }
         try{
@@ -53,6 +60,19 @@ public class Topic8_Finally {
         }
         finally{
         }
+
+
+        try{
+        }
+        finally{
+        }
+        finally{
+        }
+
+
+        try{
+        }
+
          */
     }
 }
