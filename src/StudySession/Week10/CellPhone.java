@@ -9,8 +9,8 @@ public class CellPhone {
     public static String producer = "Renastech";
 
     public static void main(String[] args) {
-        CellPhone cellPhone1 = new CellPhone("Iphone","6S");
-        CellPhone cellPhone2 = new CellPhone("Iphone","6S",512);
+       // CellPhone cellPhone1 = new CellPhone("Iphone","6S");
+        //CellPhone cellPhone2 = new CellPhone("Iphone","6S",512);
     }
 
     public static void changeProducer(String newProducer)
