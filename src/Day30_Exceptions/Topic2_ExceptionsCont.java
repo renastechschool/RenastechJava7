@@ -14,6 +14,7 @@ public class Topic2_ExceptionsCont {
 
         try {
             double ValueC  = ValueA / ValueB;
+            double NewValue = ValueC * 5;
 
         }catch (Exception MyParamName){
             System.out.println("Can't divided by Zero!");
