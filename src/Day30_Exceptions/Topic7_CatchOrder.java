@@ -25,9 +25,15 @@ public class Topic7_CatchOrder {
             System.out.println("We don't have a value at given index");
         }catch (ArithmeticException e){
             System.out.println("You can not divide by zero");
-        }catch (Exception e){
+        }
+        catch (NullPointerException e){
+            System.out.println("You have a null value!");
+        }
+        catch (Exception e){
             System.out.println("Something Happenned!");
             e.printStackTrace();
         }
+
+        System.out.println("Rest of the code");
     }
 }
