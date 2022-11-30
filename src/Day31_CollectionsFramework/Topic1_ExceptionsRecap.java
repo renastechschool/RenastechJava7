@@ -9,7 +9,12 @@ public class Topic1_ExceptionsRecap {
 
         MyAccount.Deposit(900);
 
-        MyAccount.Withdrawal(1500);
+        try{
+            MyAccount.Withdrawal(1500);
+        }catch (InsufficentException MyError){
+            System.out.println(MyError.Message);
+        }
+
 
 
     }

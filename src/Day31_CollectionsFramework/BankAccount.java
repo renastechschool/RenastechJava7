@@ -29,9 +29,16 @@ public class BankAccount {
     /// Method name = Withdrawal
 
     // PublicOrPrivate StaticOrNot ReturnType MethodName(Parameter1Type Parameter1Name, .........)
-    public void Withdrawal(double param1){
+    public void Withdrawal(double param1) throws InsufficentException {
         if (Balance < param1){
-            System.out.println("You don't have enough money");
+            /*
+            try
+            catch
+            finally
+            throw
+            throws
+             */
+            throw new InsufficentException();
         }
         else {
             Balance = Balance - param1;
