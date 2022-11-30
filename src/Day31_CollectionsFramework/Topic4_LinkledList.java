@@ -32,6 +32,18 @@ public class Topic4_LinkledList {
 
         System.out.println(MyZoo);
 
+        /*
+        addFirst()	adds the specified element at the beginning of the linked list
+        addLast()	adds the specified element at the end of the linked list
+        getFirst()	returns the first element
+        getLast()	returns the last element
+        removeFirst()	removes the first element
+        removeLast()	removes the last element
+        peek()	returns the first element (head) of the linked list
+        poll()	returns and removes the first element from the linked list
+        offer()	adds the specified element at the end of the linked list
+         */
+
 
     }
 }
