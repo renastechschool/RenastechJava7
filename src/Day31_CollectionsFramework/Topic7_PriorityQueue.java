@@ -12,6 +12,8 @@ public class Topic7_PriorityQueue {
         MyQueue.offer("4");
         MyQueue.offer("Testers");
 
+
+
         //4
         //Java
         //Testers
@@ -26,6 +28,9 @@ public class Topic7_PriorityQueue {
             String s2 = MyQueue.poll();
             System.out.println(s2);
         }
+
+        System.out.println("************");
+        System.out.println(MyQueue);
         //4  got it and deleted
         //Java
         //Testers
