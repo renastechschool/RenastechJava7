@@ -32,9 +32,11 @@ public class Topic4_LinkledList {
 
         System.out.println(MyZoo);
 
+        // Queue Interface methods
         /*
         addFirst()	adds the specified element at the beginning of the linked list
         addLast()	adds the specified element at the end of the linked list
+        Same as above -> add(yourarraylist.size(), "MyValue");
         getFirst()	returns the first element
         getLast()	returns the last element
         removeFirst()	removes the first element
@@ -43,6 +45,25 @@ public class Topic4_LinkledList {
         poll()	returns and removes the first element from the linked list
         offer()	adds the specified element at the end of the linked list
          */
+
+        // access the first element
+        String MyString1 = MyZoo.peek();
+        System.out.println(MyString1);
+
+        System.out.println("*******************");
+        // access and remove the first element
+        String MyString2 = MyZoo.poll();
+        System.out.println(MyString2);
+        System.out.println(MyZoo);
+
+        System.out.println("*******************");
+        MyZoo.offer("Lion");
+        System.out.println(MyZoo);
+
+
+
+
+
 
 
     }
