@@ -20,7 +20,11 @@ public class Topic3_FileReaderIntro {
 
             int c = MyReader.read();
 
-            System.out.println((char)c);
+            while(c != -1){
+                System.out.print((char)c);
+                c = MyReader.read();
+            }
+
 
         } catch (FileNotFoundException e){
             System.out.println("File not found!");
