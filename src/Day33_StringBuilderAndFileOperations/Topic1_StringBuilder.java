@@ -39,6 +39,5 @@ public class Topic1_StringBuilder {
 
         System.out.println(SB.charAt(5));
 
-
     }
 }
