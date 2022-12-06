@@ -43,7 +43,36 @@ public class Topic4_Anagram {
         return ReturnValue;
     }
 
+        public static Boolean IsAnagramUsingStringMethods(String Word1, String Word2){
+        //check the length if they are not equal, they are not anagram
 
+            if(Word1.length() != Word2.length()){
+                return false;
+            }
+            else{
+                // Listen - Silent
+                // Players - parsley
+                // Triangle - Integral
+                // needs - dense
+
+                // meat - team
+
+                for (int i = 0; i < Word1.length(); i++) {
+                    char MyChar = Word1.charAt(i);
+
+                    int positionofMyChar = Word2.indexOf(MyChar);
+                    if (positionofMyChar == -1){
+                        return false;
+                    }
+                    else {
+                        Word2 = Word2.substring(0,positionofMyChar)+Word2.substring(positionofMyChar + 1);
+                    }
+                }
+                return Word2.isEmpty();
+            }
+
+
+        }
 
 
 }
