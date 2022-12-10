@@ -24,7 +24,7 @@ public class Topic2_Fibonacci {
 
         int HowMany = 20;
 
-        for (int i = 2; i < HowMany; i++) {
+        for (int i = 2; i < HowMany; i=i+a) {
             int NextOne = a + b ;  // 1 <= 0 + 1    a = 0, b=1, nextone=1
             System.out.print(NextOne+" ");
 
